@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadget Directory & Buying Guides — GADGEX | Electronics Index</title>
+  <meta name="description" content="Explore comprehensive electronic gadget specifications, buying guides, and technical benchmarks across smartphones, laptops, audio gear, wearables, and smart home devices.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2300E5FF'/><circle cx='50' cy='50' r='25' fill='%23FFB800'/><circle cx='50' cy='50' r='10' fill='%23FF007F'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom active" id="navMenu">Gadget Directory</a></li>
+          <li><a href="contact.html" class="nav-link-custom" id="navContact">Device Advisory</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="menu.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Explore Directory <i class="bi bi-cpu-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Gadget Directory</a></li>
+        <li><a href="contact.html">Device Advisory</a></li>
+      </ul>
+      <a href="menu.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Explore Directory <i class="bi bi-cpu-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE HERO
+       ========================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg-container">
+      <img src="assets/images/menu_hero.jpg" alt="Gadget Directory and Electronics Catalog" class="page-hero-bg-image">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container page-hero-content">
+      <div class="eyebrow reveal-fade-down">Directory & Buying Guides <i class="bi bi-cpu-fill beer-mug-float-icon"></i></div>
+      <h1 class="section-title reveal-fade-up">ELECTRONICS DIRECTORY & GUIDES</h1>
+      <p class="section-subtitle text-cream reveal-fade-up" data-delay="150">
+        Discover, compare specifications, and find the perfect devices for your everyday life and professional workflows.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DIRECTORY & GUIDES SECTION
+       ========================================== -->
+  <section class="menu-section" id="menuSection">
+    <div class="container">
+      
+      <!-- Category Filter Navigation -->
+      <div class="menu-filter-nav reveal-fade-up" id="menuFilterNav">
+        <button class="filter-btn active" data-filter="all">All Categories</button>
+        <button class="filter-btn" data-filter="cocktails">Smartphones & Tablets</button>
+        <button class="filter-btn" data-filter="classics">Laptops & Computing</button>
+        <button class="filter-btn" data-filter="smallbites">Audio & Wearables</button>
+        <button class="filter-btn" data-filter="desserts">Smart Home & Gear</button>
+      </div>
+
+      <!-- Highlight Visual Banner -->
+      <div class="row mb-5 justify-content-center reveal-scale">
+        <div class="col-lg-10">
+          <div class="story-img-box position-relative text-center p-4" style="background: var(--bg-card); border-color: var(--border-gold);">
+            <img src="assets/images/gadget_banner.jpg" alt="Modern electronics directory setup" class="mb-3 rounded opacity-75" style="max-height: 260px; width: 100%; object-fit: cover;">
+            <p class="text-gold font-serif fs-4 mb-0">"Every specification verified. Every recommendation backed by lab testing."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- 1. SMARTPHONES & TABLETS CATEGORY -->
+          <div class="menu-category-block" data-category="cocktails">
+            <h3 class="menu-category-title"><i class="bi bi-phone text-gold"></i> SMARTPHONES & TABLETS</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Apex Ultra Flagship Smartphone</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$1,199 Tier</span>
+              </div>
+              <p class="menu-row-desc">Snapdragon 8 Gen 3, 200MP quad-camera with periscope telephoto, 6.8" 120Hz LTPO display, and 5,400mAh battery.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Dual-Screen Foldable Flagship</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$1,699 Tier</span>
+              </div>
+              <p class="menu-row-desc">7.9" inner foldable AMOLED screen, zero-gap titanium hinge, multi-window multitasking, and stylus pen support.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Compact Pure Camera Phone</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$799 Tier</span>
+              </div>
+              <p class="menu-row-desc">6.1" ergonomic one-handed form factor, 1-inch type primary camera sensor, pure OS experience, and 7 years of software updates.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Value Flagship Performance Champ</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$499 Tier</span>
+              </div>
+              <p class="menu-row-desc">Flagship-grade processor, 100W ultra-fast charging, 144Hz AMOLED panel, and stellar price-to-performance ratio.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="300">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Pro Creator 13" Tablet & Stylus</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$999 Tier</span>
+              </div>
+              <p class="menu-row-desc">Tandem OLED panel with 1,600 nits peak brightness, M-series processing silicon, ultra-low latency magnetic stylus, and studio mics.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="350">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Compact Reader & Media Tablet</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$349 Tier</span>
+              </div>
+              <p class="menu-row-desc">8.4" high-density anti-glare display, quad stereo speakers, expandable microSD storage, and lightweight travel design.</p>
+            </div>
+          </div>
+
+          <!-- 2. LAPTOPS & COMPUTING CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="classics">
+            <h3 class="menu-category-title"><i class="bi bi-laptop text-gold"></i> LAPTOPS & COMPUTING</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">14" Titanium Executive Ultrabook</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$1,399 Tier</span>
+              </div>
+              <p class="menu-row-desc">Intel Core Ultra / Snapdragon X Elite, 32GB RAM, 120Hz 3K OLED, fanless quiet cooling, and 20+ hours of battery life.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">16" Studio Pro Creator Workstation</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$2,299 Tier</span>
+              </div>
+              <p class="menu-row-desc">Dedicated RTX 4080 GPU, calibrated 100% DCI-P3 mini-LED screen, dual vapor chamber cooling, and 64GB unified memory.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Esports 240Hz High-Refresh Gaming Rig</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$1,799 Tier</span>
+              </div>
+              <p class="menu-row-desc">AMD Ryzen 9 series, mechanical per-key RGB keyboard, G-Sync certified panel, liquid metal thermal interface, and Wi-Fi 7.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Convertible 2-in-1 Touchscreen Laptop</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$949 Tier</span>
+              </div>
+              <p class="menu-row-desc">360-degree precision geared hinge, touch & pen input support, aluminum unibody build, and all-day battery efficiency.</p>
+            </div>
+          </div>
+
+          <!-- 3. AUDIO & WEARABLES CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="smallbites">
+            <h3 class="menu-category-title"><i class="bi bi-headphones text-gold"></i> AUDIO GADGETS & WEARABLES</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Reference Studio Hybrid ANC Headphones</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$399 Tier</span>
+              </div>
+              <p class="menu-row-desc">Custom 40mm biocellulose drivers, lossless Bluetooth 5.4 with LDAC & aptX Lossless, 45-hour playback, and plush lambskin cushions.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">True Wireless Spatial Audio Earbuds</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$249 Tier</span>
+              </div>
+              <p class="menu-row-desc">Adaptive noise cancellation with wind-noise mitigation, personalized dynamic head tracking, IPX7 water resistance, and wireless charging case.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Titanium Adventure & GPS Smartwatch</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$699 Tier</span>
+              </div>
+              <p class="menu-row-desc">Multi-band GNSS positioning, sapphire glass, offline topographic maps, 100m water depth gauge, and 14-day expedition battery life.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Smart Health & Sleep Tracking Ring</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$299 Tier</span>
+              </div>
+              <p class="menu-row-desc">Ultra-lightweight titanium shell, continuous heart rate variability (HRV), skin temperature sensing, and 7-day battery life without screens.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="300">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Audiophile Desktop DAC & Headphone Amp</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$199 Tier</span>
+              </div>
+              <p class="menu-row-desc">Dual ESS Sabre DAC chips, 32-bit/768kHz PCM and native DSD512 decoding, balanced 4.4mm output, and CNC aluminum chassis.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="350">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Rugged Waterproof 360° Party Speaker</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$149 Tier</span>
+              </div>
+              <p class="menu-row-desc">IP67 dust and waterproof rating, dual passive bass radiators, stereo pairing link, built-in power bank output, and 24-hour playtime.</p>
+            </div>
+          </div>
+
+          <!-- 4. SMART HOME & EMERGING TECH CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="desserts">
+            <h3 class="menu-category-title"><i class="bi bi-house-gear text-gold"></i> SMART HOME & EMERGING TECH</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Thread & Matter Smart Home Controller</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$179 Tier</span>
+              </div>
+              <p class="menu-row-desc">10.1" smart display, universal Matter bridge, on-device local automation processing, and room-calibrated spatial audio speakers.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Compact 4K HDR Drone with Omnidirectional Vision</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$759 Tier</span>
+              </div>
+              <p class="menu-row-desc">Sub-249g regulation-friendly weight, 4K/60fps HDR 10-bit D-Log recording, 360° obstacle sensing, and 34-minute flight time per battery.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">140W Multi-Port GaN Laptop & Travel Charger</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$79 Tier</span>
+              </div>
+              <p class="menu-row-desc">Next-generation GaN III semiconductor efficiency, 3x USB-C + 1x USB-A power delivery 3.1 ports, foldable prongs, and active thermal protection.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal-fade-up">
+        <a href="contact.html" class="btn-noir btn-noir-primary">
+          Request Custom Device Advisory <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECH ECOSYSTEM SYNERGY SECTION
+       ========================================== -->
+  <section class="pairing-section" id="pairingSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Device Ecosystem Synergies</div>
+        <h2 class="section-title">Recommended Setup Matchups</h2>
+        <p class="section-subtitle text-cream">
+          Curated combinations of electronic gadgets that work seamlessly together for maximum productivity and enjoyment.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2 justify-content-center">
+        <!-- Pairing 1 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="100">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/creator_kit.jpg" alt="Mobile Content Creator Gadget Setup">
+              <span class="pairing-badge-overlay"><i class="bi bi-camera-reels-fill"></i> Creator Kit</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Mobile Creator Kit</h3>
+              <div class="pairing-subtitle">Flagship Camera Phone + Wireless Mic + Compact Gimbal</div>
+              <p class="pairing-desc">
+                Record cinematic 4K 10-bit footage anywhere with stabilized 3-axis tracking, 24-bit wireless lavalier audio, and magnetic MagSafe mounting.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Run-and-gun 4K video recording with zero bulk"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pairing 2 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="200">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/workstation_setup.jpg" alt="Remote Productivity Gadget Setup">
+              <span class="pairing-badge-overlay"><i class="bi bi-laptop-fill"></i> Pro Workstation</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Remote Power Suite</h3>
+              <div class="pairing-subtitle">Ultrabook + Thunderbolt Dock + ANC Headphones</div>
+              <p class="pairing-desc">
+                Single-cable connectivity powering dual 4K external displays, multi-gigabit Ethernet, studio microphones, and acoustic focus silence.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Maximum focus & high-throughput desk workflow"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pairing 3 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="300">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/smart_home_hub.jpg" alt="Smart Home Automation Ecosystem Setup">
+              <span class="pairing-badge-overlay"><i class="bi bi-house-check-fill"></i> Smart Living</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Connected Living Hub</h3>
+              <div class="pairing-subtitle">Matter Hub + Wi-Fi 7 Mesh + Smart Lighting</div>
+              <p class="pairing-desc">
+                Whole-home wireless coverage with ultra-low latency local device routines, adaptive circadian lighting schedules, and energy monitoring.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Zero-lag automated smart home convenience"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BUYING ADVISORY & MEMBERSHIP SECTION
+       ========================================== -->
+  <section class="vip-packages-section" id="vipPackagesSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Device Advisory Services</div>
+        <h2 class="section-title">GADGEX Advisory & Research Access</h2>
+        <p class="section-subtitle text-cream">
+          Unlock personalized gadget buying consultations, early access to spec teardowns, and tailored enterprise hardware recommendations.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2 justify-content-center">
+        <!-- Package 1: Community Reader Pass -->
+        <div class="col-lg-5 reveal-slide-left" data-delay="100">
+          <div class="vip-card-package">
+            <div class="ribbon-gold">FREE & OPEN</div>
+            <div class="eyebrow">Community Tech Reader</div>
+            <h3 class="font-serif fs-2 text-cream mb-2">GADGEX Directory Access</h3>
+            <div class="vip-price">Free <span class="fs-5 text-muted-custom">/ lifetime access</span></div>
+            <div class="vip-price-sub">For Everyday Consumers & Tech Buyers</div>
+            
+            <ul class="vip-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Unlimited Access to All 2,500+ Gadget Spec Sheets</li>
+              <li><i class="bi bi-check-circle-fill"></i> Weekly Editorial Buying Guides & Deal Roundups</li>
+              <li><i class="bi bi-check-circle-fill"></i> Side-by-Side Product Comparison Matrix Tools</li>
+              <li><i class="bi bi-check-circle-fill"></i> Community Discussion & Verified User Review Boards</li>
+            </ul>
+
+            <a href="contact.html" class="btn-noir btn-noir-outline w-100">Join Free Newsletter <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Package 2: Custom Pro Device Concierge -->
+        <div class="col-lg-5 reveal-slide-right" data-delay="200">
+          <div class="vip-card-package" style="border-color: var(--gold-champagne);">
+            <div class="ribbon-gold" style="background: linear-gradient(90deg, var(--tennis-primary), var(--tennis-secondary)); color: #FFFFFF;">EXPERT SERVICE</div>
+            <div class="eyebrow">1-on-1 Personalized Advisory</div>
+            <h3 class="font-serif fs-2 text-cream mb-2">Device Concierge & Advisory</h3>
+            <div class="vip-price">Tailored <span class="fs-5 text-muted-custom">/ consultation</span></div>
+            <div class="vip-price-sub">For Professionals, Teams & Power Users</div>
+            
+            <ul class="vip-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> 1-on-1 Hardware Specification & Workflow Matching</li>
+              <li><i class="bi bi-check-circle-fill"></i> Custom Workstation, Studio or Smart Home Blueprint</li>
+              <li><i class="bi bi-check-circle-fill"></i> Laboratory Benchmarking on Specific Target Software</li>
+              <li><i class="bi bi-check-circle-fill"></i> Direct Expert Q&A with Senior Hardware Analysts</li>
+            </ul>
+
+            <a href="contact.html" class="btn-noir btn-noir-primary w-100">Book Advisory Session <i class="bi bi-cpu-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">GADG<span>EX</span></span>
+          </a>
+          <p class="footer-tagline">"Discover the Right Gadgets for Your Digital Life."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">YOUR TRUSTED TECH DIRECTORY PORTAL.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            SMARTPHONES • LAPTOPS • WEARABLES • SMART HOME • AUDIO • CAMERAS • ACCESSORIES<br>
+            Independent gadget reviews, technical comparisons, and buying recommendations.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="menu.html">Gadget Directory</a></li>
+            <li><a href="contact.html">Device Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Directory Categories -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Directory Categories</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Personal Electronics:</strong><br>Smartphones, Laptops, Tablets, Smartwatches</p>
+            <p class="mb-2"><strong class="text-gold">Home & Entertainment:</strong><br>Smart Home, Wireless Audio, TVs & Displays</p>
+            <p class="mb-0"><strong class="text-gold">Emerging & Gear:</strong><br>Drones, Action Cameras, Power & Accessories</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 GADGEX. All Rights Reserved. Electronics Gadgets Guide & Directory Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

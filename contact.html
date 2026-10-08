@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Advisory & Contact — GADGEX | Tech Inquiries</title>
+  <meta name="description" content="Get personalized gadget buying advice, submit hardware review inquiries, and connect with the GADGEX lab team. Located at Silicon Valley Innovation Quarter.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2300E5FF'/><circle cx='50' cy='50' r='25' fill='%23FFB800'/><circle cx='50' cy='50' r='10' fill='%23FF007F'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom" id="navMenu">Gadget Directory</a></li>
+          <li><a href="contact.html" class="nav-link-custom active" id="navContact">Device Advisory</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="menu.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Explore Directory <i class="bi bi-cpu-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Gadget Directory</a></li>
+        <li><a href="contact.html" class="active">Device Advisory</a></li>
+      </ul>
+      <a href="menu.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Explore Directory <i class="bi bi-cpu-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE HERO
+       ========================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg-container">
+      <img src="assets/images/contact_hero.jpg" alt="Gadget Advisory and Tech Inquiry Desk" class="page-hero-bg-image">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container page-hero-content">
+      <div class="eyebrow reveal-fade-down">Advisory & Lab Inquiries <i class="bi bi-cpu-fill beer-mug-float-icon"></i></div>
+      <h1 class="section-title reveal-fade-up">DEVICE ADVISORY & TECH SUPPORT</h1>
+      <p class="section-subtitle text-cream reveal-fade-up" data-delay="150">
+        Have questions about your next gadget upgrade? Connect with our independent hardware specialists.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & DEVICE ADVISORY SECTION
+       ========================================== -->
+  <section class="contact-section" id="contactSection">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Left Column: Advisory Form -->
+        <div class="col-lg-7 reveal-slide-left">
+          <div class="reservation-form-card h-100">
+            <div class="eyebrow">Online Hardware Concierge</div>
+            <h2 class="font-serif fs-2 mb-4 text-cream">Request Device Advisory</h2>
+            <p class="text-muted-custom mb-4">
+              Share your target budget, use cases, and gadget preferences to receive custom spec recommendations from our testing team.
+            </p>
+
+            <form id="reservationForm">
+              <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label for="resName" class="form-label-custom">Full Name / Organization</label>
+                  <input type="text" id="resName" class="form-control-noir" placeholder="e.g. Marcus Vance" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="resEmail" class="form-label-custom">Email Address</label>
+                  <input type="email" id="resEmail" class="form-control-noir" placeholder="marcus@example.com" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label for="resPhone" class="form-label-custom">Phone Number</label>
+                  <input type="tel" id="resPhone" class="form-control-noir" placeholder="+1 (555) 019-8420" required>
+                </div>
+
+                <!-- Gadget Category -->
+                <div class="col-md-6">
+                  <label for="resGuests" class="form-label-custom">Gadget Category / Topic</label>
+                  <select id="resGuests" class="form-control-noir" required>
+                    <option value="Smartphones & Mobile Devices">Smartphones & Mobile Devices</option>
+                    <option value="Laptops & Workstations">Laptops & Workstations</option>
+                    <option value="Wireless Audio & Headphones">Wireless Audio & Headphones</option>
+                    <option value="Smartwatches & Health Wearables">Smartwatches & Health Wearables</option>
+                    <option value="Smart Home & Automation">Smart Home & Automation</option>
+                    <option value="Cameras, Drones & Emerging Tech">Cameras, Drones & Emerging Tech</option>
+                  </select>
+                </div>
+
+                <!-- Date -->
+                <div class="col-md-6">
+                  <label for="resDate" class="form-label-custom">Target Upgrade Date <i class="bi bi-calendar-event text-gold ms-1"></i></label>
+                  <input type="date" id="resDate" class="form-control-noir" required>
+                </div>
+
+                <!-- Time -->
+                <div class="col-md-6">
+                  <label for="resTime" class="form-label-custom">Preferred Consultation Window</label>
+                  <select id="resTime" class="form-control-noir" required>
+                    <option value="9:00 AM - Morning Slot">9:00 AM (Morning Tech Session)</option>
+                    <option value="11:30 AM - Mid-Day Slot">11:30 AM (Mid-Day Hardware Call)</option>
+                    <option value="2:00 PM - Afternoon Slot">2:00 PM (Afternoon Spec Review)</option>
+                    <option value="4:30 PM - Evening Slot">4:30 PM (Evening Advisory Window)</option>
+                    <option value="Async Email Report">Async Email Spec Breakdown Only</option>
+                  </select>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="col-12">
+                  <label for="resRequests" class="form-label-custom">Device Requirements / Budget & Target Software</label>
+                  <textarea id="resRequests" class="form-control-noir" rows="4" placeholder="Mention your target budget, software requirements (e.g. 4K editing, coding, gaming), battery priorities, or specific models you are comparing..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-noir btn-noir-primary w-100 py-3" id="submitResBtn">
+                    SUBMIT ADVISORY REQUEST <i class="bi bi-check2-circle fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Location & Hours Info Grid -->
+        <div class="col-lg-5 reveal-slide-right">
+          <div class="d-flex flex-column gap-3 h-100 justify-content-between">
+            
+            <!-- Location & Direct Contact Side-by-side -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="info-box-card h-100">
+                  <div class="info-box-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                  <h3 class="font-serif fs-5 text-cream mb-2">Testing Lab Location</h3>
+                  <p class="text-gold font-serif fs-6 mb-1">104 Silicon Parkway</p>
+                  <p class="text-muted-custom small mb-0">Innovation Tech Quarter</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-box-card h-100">
+                  <div class="info-box-icon"><i class="bi bi-telephone-outbound-fill"></i></div>
+                  <h3 class="font-serif fs-5 text-cream mb-2">Direct Contact</h3>
+                  <a href="tel:+15550198420" class="text-gold fw-semibold d-block small mb-1">+1 (555) 019-8420</a>
+                  <a href="mailto:contact@GADGEX.io" class="text-cream small text-truncate d-block">contact@GADGEX.io</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opening Hours Info Box -->
+            <div class="info-box-card">
+              <div class="info-box-icon"><i class="bi bi-clock-history"></i></div>
+              <h3 class="font-serif fs-5 text-cream mb-3">Lab & Advisory Hours</h3>
+              
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted-custom small">Monday – Friday</span>
+                <span class="text-gold fw-semibold small">8:00 AM – 8:00 PM EST</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted-custom small">Saturday</span>
+                <span class="text-gold fw-semibold small">9:00 AM – 6:00 PM EST</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="text-muted-custom small">Sunday</span>
+                <span class="text-gold fw-semibold small">10:00 AM – 4:00 PM EST</span>
+              </div>
+            </div>
+
+            <!-- Connect & Social Media Info Box -->
+            <div class="info-box-card">
+              <div class="info-box-icon"><i class="bi bi-share-fill"></i></div>
+              <h3 class="font-serif fs-5 text-cream mb-2">Connect With GADGEX</h3>
+              <p class="text-muted-custom small mb-2">Follow our channels for weekly hardware teardowns, spec charts & lab results:</p>
+              <div class="contact-social-buttons">
+                <a href="#" class="contact-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i> YouTube</a>
+                <a href="#" class="contact-social-btn" aria-label="Twitter X"><i class="bi bi-twitter-x"></i> X / Twitter</a>
+                <a href="#" class="contact-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#" class="contact-social-btn" aria-label="GitHub"><i class="bi bi-github"></i> GitHub</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Location Map Container Section -->
+      <div class="row mt-5 reveal-fade-up">
+        <div class="col-12">
+          <div class="info-box-card p-0 overflow-hidden" style="border: 1px solid var(--border-gold);">
+            <div class="p-4 d-flex flex-wrap justify-content-between align-items-center gap-3" style="background: var(--bg-card); border-bottom: 1px solid var(--border-gold);">
+              <div>
+                <h4 class="font-serif fs-3 text-cream mb-1"><i class="bi bi-map-fill text-gold me-2"></i> GADGEX Hardware Diagnostics Facility</h4>
+                <p class="text-muted-custom mb-0">104 Silicon Parkway, Innovation Tech Quarter, CA</p>
+              </div>
+              <a href="https://maps.google.com" target="_blank" class="btn-noir btn-noir-outline py-2 px-4 fs-6">
+                Get Directions <i class="bi bi-box-arrow-up-right ms-2"></i>
+              </a>
+            </div>
+            <div class="map-visual-wrap" style="height: 380px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215570278836!2d-73.98784412347036!3d40.75798087138541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="GADGEX Facility Location">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================== -->
+  <section class="faq-section" id="faqSection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Frequently Asked Questions</div>
+        <h2 class="section-title">Common Questions About GADGEX</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10 reveal-fade-up">
+          <div class="accordion faq-accordion" id="contactFaqAccordion">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                  <i class="bi bi-question-circle-fill text-gold me-3"></i> How does GADGEX test and benchmark electronic gadgets?
+                </button>
+              </h2>
+              <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#contactFaqAccordion">
+                <div class="accordion-body">
+                  Every product undergoes controlled laboratory tests including calibrated display colorimeter profiling, standardized battery rundown loops, thermal throttling under sustained multi-core loads, RF wireless signal attenuation tests, and acoustic frequency spectrum analysis.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  <i class="bi bi-shield-check text-gold me-3"></i> Are your reviews and rankings influenced by manufacturers?
+                </button>
+              </h2>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#contactFaqAccordion">
+                <div class="accordion-body">
+                  No. GADGEX maintains 100% editorial independence. We do not accept paid placements for ranking positions or alter our laboratory test results for any brand. All pros, cons, and buying scores are based strictly on empirical performance.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  <i class="bi bi-arrow-repeat text-gold me-3"></i> How frequently are the gadget spec sheets and buying guides updated?
+                </button>
+              </h2>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#contactFaqAccordion">
+                <div class="accordion-body">
+                  Our directory database is updated weekly to reflect new product releases, firmware updates, price fluctuations, and long-term reliability findings across all covered electronics categories.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                  <i class="bi bi-layers-fill text-gold me-3"></i> Can I request a comparison between two specific models?
+                </button>
+              </h2>
+              <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#contactFaqAccordion">
+                <div class="accordion-body">
+                  Yes! Use our Device Advisory form on this page to request a head-to-head breakdown. Our team regularly produces side-by-side spec comparisons and benchmark reviews based on community requests.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                  <i class="bi bi-chat-square-dots-fill text-gold me-3"></i> How does the 1-on-1 Device Advisory Concierge service work?
+                </button>
+              </h2>
+              <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#contactFaqAccordion">
+                <div class="accordion-body">
+                  Our Device Concierge service pairs you with a dedicated hardware specialist who evaluates your exact software stack, workflow needs, and budget to deliver a tailored hardware blueprint and procurement recommendation.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       REGISTRATION / INQUIRY CONFIRMATION MODAL
+       ========================================== -->
+  <div class="modal fade" id="reservationConfirmModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-confirm-content">
+        <div class="modal-header border-bottom-0 pb-0">
+          <h5 class="modal-title font-serif text-gold fs-3" id="reservationModalLabel">Advisory Request Received!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <div class="text-center mb-3">
+            <i class="bi bi-check-circle-fill text-gold" style="font-size: 3.5rem;"></i>
+          </div>
+          <p class="text-center text-cream mb-3 fs-5">Thank you for connecting with <strong>GADGEX</strong>.</p>
+          <div class="p-3 rounded mb-3" style="background: var(--bg-primary); border: 1px solid var(--border-gold);" id="modalReservationDetails">
+            <!-- Dynamic Details inserted by main.js -->
+          </div>
+          <p class="text-muted-custom small text-center mb-0">Our hardware analysis team will review your specifications and follow up with your personalized gadget guidance report shortly.</p>
+        </div>
+        <div class="modal-footer border-top-0 pt-0 justify-content-center">
+          <button type="button" class="btn-noir btn-noir-primary" data-bs-dismiss="modal">Close & Return</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">GADG<span>EX</span></span>
+          </a>
+          <p class="footer-tagline">"Discover the Right Gadgets for Your Digital Life."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">YOUR TRUSTED TECH DIRECTORY PORTAL.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            SMARTPHONES • LAPTOPS • WEARABLES • SMART HOME • AUDIO • CAMERAS • ACCESSORIES<br>
+            Independent gadget reviews, technical comparisons, and buying recommendations.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="menu.html">Gadget Directory</a></li>
+            <li><a href="contact.html">Device Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Directory Categories -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Directory Categories</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Personal Electronics:</strong><br>Smartphones, Laptops, Tablets, Smartwatches</p>
+            <p class="mb-2"><strong class="text-gold">Home & Entertainment:</strong><br>Smart Home, Wireless Audio, TVs & Displays</p>
+            <p class="mb-0"><strong class="text-gold">Emerging & Gear:</strong><br>Drones, Action Cameras, Power & Accessories</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 GADGEX. All Rights Reserved. Electronics Gadgets Guide & Directory Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

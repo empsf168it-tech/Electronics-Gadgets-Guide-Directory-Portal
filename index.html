@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GADGEX — Electronics Gadgets Guide & Directory Portal</title>
+  <meta name="description" content="Discover, compare, and explore modern electronic gadgets with GADGEX. In-depth buying guides, technical specifications, expert reviews, and comprehensive gadget directories.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2300E5FF'/><circle cx='50' cy='50' r='25' fill='%23FFB800'/><circle cx='50' cy='50' r='10' fill='%23FF007F'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom active" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom" id="navMenu">Gadget Directory</a></li>
+          <li><a href="contact.html" class="nav-link-custom" id="navContact">Device Advisory</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="menu.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Explore Directory <i class="bi bi-cpu-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Gadget Directory</a></li>
+        <li><a href="contact.html">Device Advisory</a></li>
+      </ul>
+      <a href="menu.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Explore Directory <i class="bi bi-cpu-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HERO SECTION — CINEMATIC LUXURY TECH
+       ========================================== -->
+  <section class="hero-section" id="heroSection">
+    <div class="hero-bg-container">
+      <img src="assets/images/hero_bar.jpg" alt="GADGEX Electronics Setup and Showcase" class="hero-bg-image">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container hero-content">
+      <div class="eyebrow reveal-fade-down" id="heroEyebrow">EXPLORE SMARTER TECHNOLOGY <i class="bi bi-cpu-fill beer-mug-float-icon"></i></div>
+      <h1 class="hero-title reveal-fade-up" id="heroTitle">
+        DISCOVER THE RIGHT GADGETS<br>
+        <span>FOR YOUR DIGITAL LIFE</span>
+      </h1>
+      <p class="hero-desc reveal-fade-up" data-delay="150" id="heroDesc">
+        Explore, compare, and understand the latest electronic gadgets with detailed guides, useful specifications, expert recommendations, and easy-to-follow buying advice.
+      </p>
+      <div class="hero-ctas reveal-fade-up" data-delay="300">
+        <a href="menu.html" class="btn-noir btn-noir-primary" id="heroReserveBtn">
+          Explore Gadgets <i class="bi bi-arrow-right-short fs-4"></i>
+        </a>
+        <a href="about.html" class="btn-noir btn-noir-outline" id="heroExploreMenuBtn">
+          View Buying Guides <i class="bi bi-compass"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PORTAL STATISTICS (SPLIT LAYOUT)
+       ========================================== -->
+  <section class="stats-section" id="statsSection">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Left Side: Dark Charcoal & Tech Glow -->
+        <div class="col-lg-6 stats-split-left reveal-slide-left">
+          <div class="eyebrow">Comprehensive Tech Index</div>
+          <div class="stat-huge-number stat-count" data-target="2500" data-suffix="+">2500+</div>
+          <h3 class="font-serif fs-1 text-cream mb-3">Electronic Gadgets Cataloged</h3>
+          <p class="text-muted-custom lead" style="max-width: 500px;">
+            Powering smart consumer choices with laboratory benchmarks, side-by-side spec sheets, and verified buyer guidance across 20+ tech categories.
+          </p>
+        </div>
+
+        <!-- Right Side: Cyan / Blue Glow -->
+        <div class="col-lg-6 stats-split-right reveal-slide-right">
+          <div class="eyebrow">By The Numbers</div>
+
+          <div class="stat-item mt-4">
+            <div class="stat-num stat-count" data-target="450" data-suffix="K+">450K+</div>
+            <div class="stat-label">Monthly Tech Enthusiasts & Readers</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-num stat-count" data-target="120" data-suffix="+">120+</div>
+            <div class="stat-label">Detailed Category Buying Guides</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-num stat-count" data-target="98" data-suffix="%">98%</div>
+            <div class="stat-label">User Recommendation Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GADGET GUIDE PILLARS & FEATURES
+       ========================================== -->
+  <section class="experience-section" id="experienceSection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Guide & Directory Portal</div>
+        <h2 class="section-title">How GADGEX Empowers You</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. In-Depth Comparisons -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="100">
+          <div class="experience-card" id="expCard1">
+            <div class="exp-icon-box">
+              <i class="bi bi-layers-half"></i>
+            </div>
+            <h3 class="exp-title">Side-by-Side Comparisons</h3>
+            <p class="exp-desc">
+              Compare processor clock speeds, camera sensors, battery life, display nits, and real-world performance metrics instantly.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Curated Buying Guides -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="200">
+          <div class="experience-card" id="expCard2">
+            <div class="exp-icon-box">
+              <i class="bi bi-journal-bookmark-fill"></i>
+            </div>
+            <h3 class="exp-title">Curated Buying Guides</h3>
+            <p class="exp-desc">
+              Clear recommendations grouped by budget, use case, operating system, and lifestyle requirements without marketing hype.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Spec Benchmarks & Labs -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="300">
+          <div class="experience-card" id="expCard3">
+            <div class="exp-icon-box">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <h3 class="exp-title">Lab Benchmarks & Specs</h3>
+            <p class="exp-desc">
+              Transparent testing data on thermal throttling, real-world battery endurance, acoustic tuning, and display color accuracy.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Beginner-Friendly Advice -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="400">
+          <div class="experience-card" id="expCard4">
+            <div class="exp-icon-box">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <h3 class="exp-title">Beginner-Friendly Advice</h3>
+            <p class="exp-desc">
+              Jargon-free explanations of complex specs like OLED vs mini-LED, Wi-Fi 7, ANC codecs, and silicon chip architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED GADGETS SHOWCASE SECTION
+       ========================================== -->
+  <section class="drinks-section" id="drinksSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Featured Technology</div>
+        <h2 class="section-title">Trending Gadgets & Top Picks</h2>
+        <p class="section-subtitle">
+          Engineered for excellence. Discover our highest-rated electronic devices across key product categories.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Gadget 1 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="100">
+          <div class="drink-card" id="drinkCard1">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_espresso.jpg" alt="Flagship Smartphone Showcase" class="drink-img">
+              <span class="drink-badge">Top Rated</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Ultra Flagship Smartphone</h3>
+              <p class="drink-desc">
+                200MP periscope zoom sensor, Snapdragon 8 Gen 3 silicon, 120Hz LTPO AMOLED, and all-day 5,400mAh battery efficiency.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-phone-fill"></i> Smartphones Guide
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 2 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="200">
+          <div class="drink-card" id="drinkCard2">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_golden_hour.jpg" alt="Slim Ultrabook Laptop Showcase" class="drink-img">
+              <span class="drink-badge">Editor's Pick</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Slim Titanium Ultrabook</h3>
+              <p class="drink-desc">
+                Ultra-lightweight aerospace chassis, 3.2K OLED display, 22-hour real battery life, and high-efficiency neural AI coprocessor.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-laptop-fill"></i> Laptops & Notebooks
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 3 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="300">
+          <div class="drink-card" id="drinkCard3">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_negroni.jpg" alt="Wireless Noise Cancelling Headphones" class="drink-img">
+              <span class="drink-badge">Best Audio</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Studio ANC Headphones</h3>
+              <p class="drink-desc">
+                Lossless LDAC wireless audio streaming, adaptive hybrid noise cancellation, memory foam earcups, and 45-hour playback.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-headphones"></i> Audio & Acoustics
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 4 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="400">
+          <div class="drink-card" id="drinkCard4">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_mojito.jpg" alt="Smartwatch Fitness Tracker Showcase" class="drink-img">
+              <span class="drink-badge">Best Wearable</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Next-Gen Pro Smartwatch</h3>
+              <p class="drink-desc">
+                Dual-frequency GPS navigation, sapphire glass screen, ECG & SpO2 health sensors, 100m water resistance, and 7-day battery.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-smartwatch"></i> Wearables & Fitness
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal-fade-up">
+        <a href="menu.html" class="btn-noir btn-noir-outline">
+          View Complete Gadget Directory <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ATMOSPHERIC TECH SHOWCASE VIDEO SECTION
+       ========================================== -->
+  <section class="video-section" id="videoSection">
+    <img src="assets/images/video_thumb.jpg" alt="Electronics Gadgets Teardown and Lab Testing" class="video-bg">
+    <div class="video-overlay"></div>
+
+    <div class="container video-content reveal-scale">
+      <div class="play-btn-pulse" id="videoPlayBtn" role="button" aria-label="Play gadget video review showcase">
+        <i class="bi bi-play-fill"></i>
+      </div>
+      <div class="eyebrow">GADGEX Lab Showcase</div>
+      <h2 class="section-title">See Technology In Action</h2>
+      <p class="section-subtitle text-cream">
+        From silicon teardowns and camera sensor shootouts to battery endurance stress tests, watch our unbiased gadget evaluations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox for Video -->
+  <div class="video-lightbox-modal" id="videoLightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxCloseBtn"><i class="bi bi-x-lg"></i></button>
+      <div class="p-4 text-center">
+        <div class="eyebrow mb-2">GADGEX VIDEO LABS</div>
+        <h3 class="mb-3 font-serif fs-2">Hands-On Gadget Analysis</h3>
+        <img src="assets/images/video_thumb.jpg" alt="Gadget review testing lab showcase" class="img-fluid rounded mb-3">
+        <p class="text-muted-custom mb-4">Explore high-speed thermal camera tests, wireless signal range analysis, audio acoustic graphs, and comprehensive side-by-side benchmark showdowns.</p>
+        <a href="menu.html" class="btn-noir btn-noir-primary">Browse All Product Guides <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       BUYING GUIDES & TRENDS SECTION
+       ========================================== -->
+  <section class="events-section" id="eventsSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Latest Editorial Guides</div>
+        <h2 class="section-title">Featured Tech Articles & Buying Advice</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Guide 1 -->
+        <div class="col-md-4 reveal-fade-up" data-delay="100">
+          <div class="event-card" id="eventCard1">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_friday.jpg" alt="Smartphone Camera Shootout and Guide" class="event-img">
+              <span class="event-date-tag">Buying Guide</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">The Ultimate 2026 Smartphone Guide</h3>
+              <p class="event-desc">
+                Breaking down camera sensor sizes, computational photography, battery charging speeds, and display refresh rates for every budget.
+              </p>
+              <a href="menu.html" class="event-link">
+                Read Full Guide <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide 2 -->
+        <div class="col-md-4 reveal-fade-up" data-delay="200">
+          <div class="event-card" id="eventCard2">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_saturday.jpg" alt="Laptop and Ultrabook Comparison Guide" class="event-img">
+              <span class="event-date-tag">Tech Deep-Dive</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Best Laptops for Work, Coding & Creators</h3>
+              <p class="event-desc">
+                How to select the right CPU architectures, unified memory capacities, color-accurate panels, and cooling solutions for intensive workflows.
+              </p>
+              <a href="menu.html" class="event-link">
+                Read Full Guide <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide 3 -->
+        <div class="col-md-4 reveal-fade-up" data-delay="300">
+          <div class="event-card" id="eventCard3">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_sunday.jpg" alt="Smart Home and Connected Devices Guide" class="event-img">
+              <span class="event-date-tag">Smart Ecosystems</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Building a Seamless Smart Home Ecosystem</h3>
+              <p class="event-desc">
+                A step-by-step guide to Matter protocol standards, smart lighting networks, home security hubs, and connected voice assistants.
+              </p>
+              <a href="menu.html" class="event-link">
+                Read Full Guide <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="testimonials-section" id="testimonialsSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Community & Reader Feedback</div>
+        <h2 class="section-title">Trusted by Tech Buyers Worldwide</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="100">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "GADGEX helped me choose my new ultrabook without falling into confusing marketing buzzwords. The benchmark comparisons and battery life breakdowns were 100% spot on."
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author1.jpg" alt="Alex Rivera Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">Alex Rivera</div>
+                <div class="author-role">Software Engineer & Tech Enthusiast</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="200">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The buying guides on wireless noise cancelling headphones saved me hours of research. I found the exact sound signature and multi-device pairing support I needed for travel."
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author2.jpg" alt="Elena Rostova Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-role">Audio Engineer & Content Producer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="300">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Hands down the cleanest, most objective gadget directory available. From smart home sensors to gaming handhelds, the spec sheets and pros & cons are unmatched."
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author3.jpg" alt="David Sterling Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">David Sterling</div>
+                <div class="author-role">Smart Home Specialist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DRAMATIC CTA SECTION
+       ========================================== -->
+  <section class="dramatic-cta-section" id="dramaticCtaSection">
+    <div class="container reveal-scale text-center d-flex flex-column align-items-center">
+      <div class="eyebrow">Smart Tech Directory</div>
+      <h2 class="dramatic-cta-title">
+        SMART TECH.<br>
+        <span>SMARTER CHOICES.</span>
+      </h2>
+      <p class="section-subtitle text-cream mb-4 mx-auto" style="max-width: 550px;">
+        Find your next gadget with complete confidence. Explore specifications, compare alternatives, and unlock unbiased buying advice today.
+      </p>
+      <a href="menu.html" class="btn-noir btn-noir-primary py-3 px-5 fs-6">
+        BROWSE GADGET DIRECTORY <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info & Editorial Statement -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">GADG<span>EX</span></span>
+          </a>
+          <p class="footer-tagline">"Discover the Right Gadgets for Your Digital Life."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">YOUR TRUSTED TECH DIRECTORY PORTAL.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            SMARTPHONES • LAPTOPS • WEARABLES • SMART HOME • AUDIO • CAMERAS • ACCESSORIES<br>
+            Independent gadget reviews, technical comparisons, and buying recommendations.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="menu.html">Gadget Directory</a></li>
+            <li><a href="contact.html">Device Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Directory Categories -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Directory Categories</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Personal Electronics:</strong><br>Smartphones, Laptops, Tablets, Smartwatches</p>
+            <p class="mb-2"><strong class="text-gold">Home & Entertainment:</strong><br>Smart Home, Wireless Audio, TVs & Displays</p>
+            <p class="mb-0"><strong class="text-gold">Emerging & Gear:</strong><br>Drones, Action Cameras, Power & Accessories</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 GADGEX. All Rights Reserved. Electronics Gadgets Guide & Directory Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

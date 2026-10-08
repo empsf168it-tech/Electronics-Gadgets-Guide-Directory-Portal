@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — GADGEX | Electronics Gadgets Guide & Directory Portal</title>
+  <meta name="description" content="Learn about GADGEX's mission to provide honest, lab-tested gadget comparisons, comprehensive buying guides, and a modern consumer electronics directory.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2300E5FF'/><circle cx='50' cy='50' r='25' fill='%23FFB800'/><circle cx='50' cy='50' r='10' fill='%23FF007F'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom active" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom" id="navMenu">Gadget Directory</a></li>
+          <li><a href="contact.html" class="nav-link-custom" id="navContact">Device Advisory</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="menu.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Explore Directory <i class="bi bi-cpu-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">GADG<span>EX</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="menu.html">Gadget Directory</a></li>
+        <li><a href="contact.html">Device Advisory</a></li>
+      </ul>
+      <a href="menu.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Explore Directory <i class="bi bi-cpu-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE HERO
+       ========================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg-container">
+      <img src="assets/images/about_space.jpg" alt="GADGEX Electronics Testing and Showroom" class="page-hero-bg-image">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container page-hero-content">
+      <div class="eyebrow reveal-fade-down">Our Mission & Standards <i class="bi bi-cpu-fill beer-mug-float-icon"></i></div>
+      <h1 class="section-title reveal-fade-up">MORE THAN SPECS.<br><span class="text-gold font-serif">A SMARTER GADGET GUIDE.</span></h1>
+      <p class="section-subtitle text-cream reveal-fade-up" data-delay="150">
+        Empowering tech enthusiasts, professionals, and everyday consumers with objective analysis, laboratory benchmarks, and practical gadget wisdom.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BRAND STATISTICS COUNTER
+       ========================================== -->
+  <section class="stats-section bg-secondary py-5 border-top border-bottom border-subtle">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3 reveal-fade-up" data-delay="100">
+          <div class="stat-num stat-count" data-target="2500" data-suffix="+">2500+</div>
+          <div class="stat-label">Gadgets Lab-Evaluated</div>
+        </div>
+        <div class="col-6 col-md-3 reveal-fade-up" data-delay="200">
+          <div class="stat-num stat-count" data-target="12" data-suffix="+">12+</div>
+          <div class="stat-label">Years of Tech Excellence</div>
+        </div>
+        <div class="col-6 col-md-3 reveal-fade-up" data-delay="300">
+          <div class="stat-num stat-count" data-target="450" data-suffix="K+">450K+</div>
+          <div class="stat-label">Active Monthly Readers</div>
+        </div>
+        <div class="col-6 col-md-3 reveal-fade-up" data-delay="400">
+          <div class="stat-num stat-count" data-prefix="#" data-target="1" data-suffix="">#1</div>
+          <div class="stat-label">Independent Gadget Portal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR STORY SECTION
+       ========================================== -->
+  <section class="story-section" id="storySection">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-slide-left">
+          <div class="story-img-box">
+            <img src="assets/images/about_hero.jpg" alt="Hardware testing engineer measuring gadget performance">
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-slide-right">
+          <div class="eyebrow">The Foundation</div>
+          <h2 class="font-serif fs-1 mb-4 text-cream">Our Editorial Story</h2>
+          <p class="lead text-gold font-serif fst-italic mb-4">
+            "GADGEX was founded on the belief that consumer electronics should be evaluated with scientific rigor, clear comparisons, and zero marketing bias."
+          </p>
+          <p class="text-muted-custom mb-4">
+            In an era where tech products are launched daily with confusing acronyms and overblown marketing claims, GADGEX provides a clear, reliable beacon. We test smartphones, ultrabooks, audio gear, wearables, smart home systems, and emerging technologies under controlled laboratory conditions to verify manufacturer specifications.
+          </p>
+          <p class="text-muted-custom">
+            We don't merely list feature sheets — we translate battery drain curves, display colorimetry scores, thermal throttling graphs, and wireless protocol compatibility into practical buying decisions tailored to your exact budget and workflow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR PHILOSOPHY
+       ========================================== -->
+  <section class="experience-section bg-primary" id="philosophySection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Core Pillars</div>
+        <h2 class="section-title">Our Testing Philosophy</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Lab-Driven Benchmarking -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="100">
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <h3 class="exp-title">Lab Benchmarking</h3>
+            <p class="exp-desc">
+              Standardized battery endurance loops, calibrated thermal measurements, display lux testing, and acoustic frequency curves.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Independent Integrity -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="200">
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3 class="exp-title">Unbiased Integrity</h3>
+            <p class="exp-desc">
+              100% editorial independence with no paid ranking slots, honest pros and cons, and transparent evaluation criteria.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Consumer-Centric Advice -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="300">
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h3 class="exp-title">Buyer-First Focus</h3>
+            <p class="exp-desc">
+              Translating silicon specs and technical jargon into actionable recommendations for students, creators, and professionals.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Comprehensive Directory -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="400">
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <h3 class="exp-title">Complete Tech Index</h3>
+            <p class="exp-desc">
+              Organized directory tracking 20+ electronics categories, updated weekly with firmware changes and price-to-performance shifts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR TESTING LABS & SHOWROOM SECTION
+       ========================================== -->
+  <section class="story-section bg-secondary" id="spaceSection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Testing Facility & Showroom</div>
+        <h2 class="section-title">Inside the GADGEX Testing Labs</h2>
+        <p class="section-subtitle">Engineered for precise sensor measurement, battery discharge tracking, and audio fidelity analysis.</p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal-slide-left">
+          <div class="story-img-box">
+            <img src="assets/images/lab_diagnostics.jpg" alt="GADGEX Hardware Diagnostics and Lab Testing Rig">
+          </div>
+        </div>
+        <div class="col-lg-5 reveal-slide-right">
+          <h3 class="font-serif fs-2 text-cream mb-3">Precision Diagnostic Standards</h3>
+          <p class="text-muted-custom mb-4">
+            Our multi-disciplinary laboratory houses calibrated spectroradiometers, RF signal attenuators, artificial head acoustic mannequins, and automated robot arm testing rigs. Every review undergoes repeatable testing protocols before publishing.
+          </p>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+              <span class="text-cream">Calibrated Display Colorimetry & Peak Lux Testing</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+              <span class="text-cream">Acoustic Soundstage & ANC Frequency Chambers</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+              <span class="text-cream">Thermal Throttling & Sustained Multi-Core Stress Rigs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TIMELINE SECTION
+       ========================================== -->
+  <section class="timeline-section" id="timelineSection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Evolution</div>
+        <h2 class="section-title">The GADGEX Journey</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- 2014 -->
+          <div class="timeline-item reveal-fade-up" data-delay="100">
+            <div class="timeline-year">2014</div>
+            <h4 class="font-serif text-cream mb-2">The Founding Vision</h4>
+            <p class="text-muted-custom mb-0">Hardware engineers and tech journalists launched GADGEX to create transparent, spec-verified buying guides for consumer tech.</p>
+          </div>
+
+          <!-- 2017 -->
+          <div class="timeline-item reveal-fade-up" data-delay="200">
+            <div class="timeline-year">2017</div>
+            <h4 class="font-serif text-cream mb-2">Dedicated Testing Lab Launch</h4>
+            <p class="text-muted-custom mb-0">Built out our first hardware diagnostics facility, introducing automated battery rundown tests and calibrated camera sensor evaluation charts.</p>
+          </div>
+
+          <!-- 2021 -->
+          <div class="timeline-item reveal-fade-up" data-delay="300">
+            <div class="timeline-year">2021</div>
+            <h4 class="font-serif text-cream mb-2">Smart Directory & Comparison Engine</h4>
+            <p class="text-muted-custom mb-0">Introduced real-time side-by-side spec comparison tools across smart home, personal audio, ultrabooks, and wearable technology.</p>
+          </div>
+
+          <!-- 2026 -->
+          <div class="timeline-item reveal-fade-up" data-delay="400">
+            <div class="timeline-year">2026</div>
+            <h4 class="font-serif text-cream mb-2">Global Tech Directory Portal</h4>
+            <p class="text-muted-custom mb-0">Over 2,500 cataloged electronic gadgets, trusted by over 450,000 monthly readers seeking unbiased buying guidance and technical clarity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="GADGEX Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">GADG<span>EX</span></span>
+          </a>
+          <p class="footer-tagline">"Discover the Right Gadgets for Your Digital Life."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">YOUR TRUSTED TECH DIRECTORY PORTAL.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            SMARTPHONES • LAPTOPS • WEARABLES • SMART HOME • AUDIO • CAMERAS • ACCESSORIES<br>
+            Independent gadget reviews, technical comparisons, and buying recommendations.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="menu.html">Gadget Directory</a></li>
+            <li><a href="contact.html">Device Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Directory Categories -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Directory Categories</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Personal Electronics:</strong><br>Smartphones, Laptops, Tablets, Smartwatches</p>
+            <p class="mb-2"><strong class="text-gold">Home & Entertainment:</strong><br>Smart Home, Wireless Audio, TVs & Displays</p>
+            <p class="mb-0"><strong class="text-gold">Emerging & Gear:</strong><br>Drones, Action Cameras, Power & Accessories</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 GADGEX. All Rights Reserved. Electronics Gadgets Guide & Directory Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
